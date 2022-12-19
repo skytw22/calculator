@@ -1,10 +1,15 @@
 .container {
     width: 400px;
     height: 600px;
-    background-color: aqua;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
 }
 
 .display {
@@ -12,12 +17,42 @@
     height: 100px;
 }
 
-.clear, .delete {
-    width: 200px;
-    height: 100px;
+#clear, #delete {
+    width: 190px;
+    height: 90px;
+    border: 3px solid;
 }
 
 button {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
+    border: 2px solid;
+    font-size: large;
+}
+
+.operator {
+    font-size: x-large;
+    background-color: beige;
+}
+
+#equals {
+    background-color: aquamarine;
+}
+
+#clear, #delete {
+    background-color:darksalmon;
+    color: white;
+    border: 3px solid black;
+}
+
+#lastOperationScreen {
+    min-height: 40px;
+    font-size: 30px;
+    text-align: end;
+}
+
+#currentOperationScreen {
+    min-height: 60px;
+    font-size: 50px;
+    text-align: end;
 }
